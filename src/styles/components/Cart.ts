@@ -4,8 +4,8 @@ interface CartProps {
   isOpen: boolean;
 }
 
-export const CartContainer = styled.div<CartProps>`
-  position: absolute;
+export const CartContainer = styled.aside<CartProps>`
+  position: fixed;
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   flex-direction: column;
   z-index: 1;
